@@ -1,1 +1,144 @@
-                                                                                               
+@charset "UTF-8";
+
+* {}             
+
+/* PALETA DE CORES */
+:root {}
+
+/* CORPO */
+body {}
+
+.container {}
+
+/* CABEÇALHO */
+.cabecalho {}
+
+/* LOGO */
+.cabecalho__imgBox {}
+
+.cabecalho__imgBox img {}
+
+/* ÁREA DE NAVEGAÇÃO */
+.cabecalho__navegacao {}
+
+/* LISTA DE LINKS */
+.navecacao__listaLinks {}
+
+.listaLinks__item {}
+
+.listaLinks__item a {}
+
+/* CARRINHO DE COMPRAS */
+.navegacao__carrinhoCompras {}
+
+.navegacao__carrinhoCompras svg {}
+
+/* CONTEÚDO */
+.conteudo {}
+
+/* SEÇÃO DE SERVIÇO */
+.conteudo__secaoServico {}
+
+.conteudo__secaoServico h1 {}
+
+.conteudo__secaoServico p {}
+
+.conteudo__secaoServico a {}
+
+/* SEÇÃO DE APOIAR */
+.conteudo__secaoApoiar {}
+
+/* SUPORTE */
+.secaoApoiar__suporte {}
+
+.suporte__titulo {}
+
+.suporte__titulo span {}
+
+.suporte__titulo h2 {}
+
+.suporte__descricao {}
+
+.suporte__descricao p {}
+
+/* LISTA DE COMPRAR E DOAR */
+.secaoApoiar__listaComprarDoar {}
+
+.listaComprarDoar__item {}
+
+.item__blocoSuporte {}
+
+.item__blocoSuporte span {}
+
+.item__blocoSuporte p {}
+
+.item__blocoSuporte svg {}
+
+.listaComprarDoar__item p {}
+
+/* SEÇÃO SEGURANÇA DO COVID */
+.conteudo__secaoSegurancaCovid {}
+
+.conteudo__secaoSegurancaCovid h1 {}
+
+.conteudo__secaoSegurancaCovid p {}
+
+.conteudo__secaoSegurancaCovid a {}
+
+/* SEÇÃO DE PRODUTOS */
+.conteudo__secaoProdutos {}
+
+.secaoProdutos__titulo {}
+
+.secaoProdutos__titulo span {}
+
+.secaoProdutos__titulo h2 {}
+
+/* LISTA DE PRODUTOS */
+.secaoProdutos__listaProdutos {}
+
+.listaProduto__produto {}
+
+.listaProduto__produto a {}
+
+.listaProduto__produto img {}
+
+.produto__descricao {}
+
+.produto__descricao h3 {}
+
+.descricao__preco {}
+
+.descricao__preco strong {}
+
+.descricao__preco del {}
+
+.produto__descricao a {}
+
+/* SEÇÃO LOJA LOCAL */
+.conteudo__secaoLojaLocal {}
+
+.secaoLoja__imgBox {}
+
+.secaoLoja__descricaoLojaLocal {}
+
+.secaoLoja__descricaoLojaLocal h2 {}
+
+.secaoLoja__descricaoLojaLocal p {}
+
+.secaoLoja__descricaoLojaLocal span {}
+
+.secaoLoja__descricaoLojaLocal span strong {}
+
+/* RODAPÉ */
+.rodape {}
+
+.rodape a {}
+
+.rodape a img {}
+
+.rodape__iconeSocial {}
+
+.rodape__iconeSocial .icone {}
+
+.rodape__iconeSocial .icone img {}
