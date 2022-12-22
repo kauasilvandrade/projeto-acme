@@ -107,13 +107,42 @@ body {
 .conteudo {}
 
 /* SEÇÃO DE SERVIÇO */
-.conteudo__secaoServico {}
+.conteudo__secaoServico {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#222), to(rgba(34, 34, 34, 0))), url("../img/fundo-introducao.jpg");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    padding: 17rem 1rem 1rem 1rem;
+    min-height: 530px;
+}
 
-.conteudo__secaoServico h1 {}
+.conteudo__secaoServico > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 71%;
+}
 
-.conteudo__secaoServico p {}
+.conteudo__secaoServico h1 {
+    color: var(--cor2);
+    font-size: 2em;
+    margin-bottom: 1rem;
+}
 
-.conteudo__secaoServico a {}
+.conteudo__secaoServico p {
+    color: var(--cor2);
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.conteudo__secaoServico a {
+    color: var(--cor2);
+    border: 2px solid var(--cor2);
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    font-weight: 700;
+    border-radius: 5px;
+}
 
 /* SEÇÃO DE APOIAR */
 .conteudo__secaoApoiar {}
@@ -171,7 +200,9 @@ body {
 
 .listaProduto__produto a {}
 
-.listaProduto__produto img {}
+.listaProduto__produto img {
+    width: 100%;
+}
 
 .produto__descricao {}
 
