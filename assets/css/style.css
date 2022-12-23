@@ -18,6 +18,7 @@
 /* CORPO */
 body {
     font-family: 'Sen', Arial, sans-serif;
+    color: var(--cor1);
 }
 
 .container {}
@@ -107,12 +108,16 @@ body {
 .conteudo {}
 
 /* SEÇÃO DE SERVIÇO */
-.conteudo__secaoServico {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#222), to(rgba(34, 34, 34, 0))), url("../img/fundo-introducao.jpg");
+.conteudo__secaoServico, .conteudo__secaoSegurancaCovid {
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
     padding: 17rem 1rem 3rem 1rem;
     min-height: 530px;
+}
+
+.conteudo__secaoServico {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#222), to(rgba(34, 34, 34, 0))), url("../img/fundo-introducao.jpg");
+    background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)), url("../img/fundo-introducao.jpg");
 }
 
 .conteudo__secaoServico > .container {
@@ -145,38 +150,85 @@ body {
 }
 
 /* SEÇÃO DE APOIAR */
-.conteudo__secaoApoiar {}
+.conteudo__secaoApoiar {
+    padding: 4rem 1rem 6rem 1rem;
+}
 
 /* SUPORTE */
 .secaoApoiar__suporte {}
 
 .suporte__titulo {}
 
-.suporte__titulo span {}
+.suporte__titulo span, .suporte__titulo h2 {
+    margin-bottom: 1rem;
+}
 
-.suporte__titulo h2 {}
+.suporte__titulo span {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.suporte__titulo h2 {
+    font-size: 2.4em;
+}
 
 .suporte__descricao {}
 
-.suporte__descricao p {}
+.suporte__descricao p, .listaComprarDoar__item p {
+    font-size: 0.99em;
+    line-height: 1.5;
+}
+
+.suporte__descricao p {
+    margin-bottom: 3rem;
+}
 
 /* LISTA DE COMPRAR E DOAR */
-.secaoApoiar__listaComprarDoar {}
+.secaoApoiar__listaComprarDoar {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
 
 .listaComprarDoar__item {}
 
-.item__blocoSuporte {}
+.item__blocoSuporte {
+    background-color: var(--cor1);
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+    position: relative;
+    padding: 2rem 2rem 5.5rem 2rem;
+    overflow: hidden;
+}
 
-.item__blocoSuporte span {}
+.item__blocoSuporte span {
+    font-size: 2.5em;
+    font-weight: bold;
+}
 
-.item__blocoSuporte p {}
+.item__blocoSuporte p {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 2.5em;
+}
 
-.item__blocoSuporte svg {}
+.item__blocoSuporte svg {
+    position: absolute;
+    right: -2.5rem;
+}
 
 .listaComprarDoar__item p {}
 
 /* SEÇÃO SEGURANÇA DO COVID */
-.conteudo__secaoSegurancaCovid {}
+.conteudo__secaoSegurancaCovid {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 0.17)), to(#222)), url("../img/fundo-seguranca.jpg");
+    background-image: linear-gradient(180deg, rgba(34, 34, 34, 0.17), #222), url("../img/fundo-seguranca.jpg");
+}
 
 .conteudo__secaoSegurancaCovid h1 {}
 
