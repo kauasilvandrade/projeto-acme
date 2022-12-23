@@ -192,7 +192,9 @@ body {
     gap: 3rem;
 }
 
-.listaComprarDoar__item {}
+.listaComprarDoar__item {
+    flex: 1 1 15rem;
+}
 
 .item__blocoSuporte {
     background-color: var(--cor1);
@@ -202,6 +204,7 @@ body {
     position: relative;
     padding: 2rem 2rem 5.5rem 2rem;
     overflow: hidden;
+    height: 20rem;
 }
 
 .item__blocoSuporte span {
@@ -209,17 +212,27 @@ body {
     font-weight: bold;
 }
 
+.listaComprarDoar__item:nth-child(2) > .item__blocoSuporte span  {
+    display: block;
+    margin-bottom: 3rem;
+}
+
 .item__blocoSuporte p {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    margin: 1rem 0;
     font-size: 2.5em;
+    margin: 1rem auto 1rem auto;
+    max-width: 14rem;
 }
 
 .item__blocoSuporte svg {
     position: absolute;
     right: -2.5rem;
+}
+
+.listaComprarDoar__item:nth-child(2) > .item__blocoSuporte svg  {
+    top: 15rem;
 }
 
 .listaComprarDoar__item p {}
