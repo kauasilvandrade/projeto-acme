@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 500px) {
+    
+    /* LOGO */
+    .cabecalho__imgBox img {
+        max-width: 7rem;
+    }
+
+    /* SEÇÃO DE SERVIÇO */
+    .conteudo__secaoServico {
+        padding: 7rem 1rem 3rem 1rem;
+    }
+
+    .conteudo__secaoServico > .container {
+        /* max-width: 36%; */
+    }
+
+    .conteudo__secaoServico h1 {
+        font-size: 3.9em;
+    }
+
+    .conteudo__secaoServico p {
+        font-size: 1.2em;
+    }
+
+}

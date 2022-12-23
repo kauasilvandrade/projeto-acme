@@ -82,6 +82,7 @@ body {
     display: flex;
     position: relative;
     justify-content: center;
+    cursor: pointer;
 }
 
 .navegacao__carrinhoCompras::before {
@@ -433,4 +434,10 @@ body {
 
 .rodape__iconeSocial .icone img {
     width: 2.4rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.rodape__iconeSocial .icone img:hover {
+    opacity: 0.6;
 }
