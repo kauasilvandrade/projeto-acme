@@ -374,27 +374,63 @@ body {
 /* SEÇÃO LOJA LOCAL */
 .conteudo__secaoLojaLocal {}
 
-.secaoLoja__imgBox {}
+.secaoLoja__imgBox {
+    min-height: 440px;
+    border-radius: 5px;
+    background-position: 69% 80%;
+    background-size: 270%;
+    background-image: url("../img/fundo-christiann.jpg");
+}
 
-.secaoLoja__descricaoLojaLocal {}
+.secaoLoja__descricaoLojaLocal {
+    background-color: var(--cor1);
+    color: var(--cor2);
+    padding: 2rem;
+    padding-bottom: 4rem;
+}
 
-.secaoLoja__descricaoLojaLocal h2 {}
+.secaoLoja__descricaoLojaLocal h2 {
+    margin-bottom: 1rem;
+    font-size: 2.8em;
+}
 
-.secaoLoja__descricaoLojaLocal p {}
+.secaoLoja__descricaoLojaLocal p {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
 
-.secaoLoja__descricaoLojaLocal span {}
+.secaoLoja__descricaoLojaLocal span {
+    line-height: 1.5;
+}
 
 .secaoLoja__descricaoLojaLocal span strong {}
 
 /* RODAPÉ */
-.rodape {}
+.rodape {
+    background-color: var(--cor1);
+    padding: 2rem;
+    padding-bottom: 3rem;
+}
+
+.rodape > .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+}
 
 .rodape a {}
 
 .rodape a img {}
 
-.rodape__iconeSocial {}
+.rodape__iconeSocial {
+    display: flex;
+    gap: 3.5rem;
+    justify-content: center;
+}
 
 .rodape__iconeSocial .icone {}
 
-.rodape__iconeSocial .icone img {}
+.rodape__iconeSocial .icone img {
+    width: 2.4rem;
+}
