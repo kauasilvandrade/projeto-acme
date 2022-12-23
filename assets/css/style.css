@@ -25,7 +25,7 @@ body {
 /* CABEÇALHO */
 .cabecalho {
     background-color: var(--cor3);
-    padding: 1.5rem 1.5rem;
+    padding: 1.5rem;
 }
 
 .cabecalho > .container {
@@ -73,14 +73,14 @@ body {
 
 /* CARRINHO DE COMPRAS */
 .navegacao__carrinhoCompras {
-    justify-content: center;
     background: var(--cor1);
     border-radius: 5px;
     height: 2rem;
+    width: 2.7rem;
     align-items: center;
     display: flex;
-    width: 2.7rem;
     position: relative;
+    justify-content: center;
 }
 
 .navegacao__carrinhoCompras::before {
@@ -90,13 +90,13 @@ body {
     justify-content: center;
     align-items: center;
     background-color: var(--cor2);
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
     right: -9px;
     top: -10px;
     border-radius: 50%;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 0.75em;
 }
 
 .navegacao__carrinhoCompras svg {
@@ -111,7 +111,7 @@ body {
     background-image: -webkit-gradient(linear, left bottom, left top, from(#222), to(rgba(34, 34, 34, 0))), url("../img/fundo-introducao.jpg");
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
-    padding: 17rem 1rem 1rem 1rem;
+    padding: 17rem 1rem 3rem 1rem;
     min-height: 530px;
 }
 
@@ -122,21 +122,21 @@ body {
     max-width: 71%;
 }
 
-.conteudo__secaoServico h1 {
+.conteudo__secaoServico h1, .conteudo__secaoServico p, .conteudo__secaoServico a {
     color: var(--cor2);
-    font-size: 2em;
     margin-bottom: 1rem;
+}
+
+.conteudo__secaoServico h1 {
+    font-size: 2em;
 }
 
 .conteudo__secaoServico p {
-    color: var(--cor2);
     font-size: 0.9em;
     line-height: 1.5;
-    margin-bottom: 1rem;
 }
 
 .conteudo__secaoServico a {
-    color: var(--cor2);
     border: 2px solid var(--cor2);
     text-decoration: none;
     padding: 0.5rem 1.5rem;
