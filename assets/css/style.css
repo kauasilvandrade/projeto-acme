@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: var(--cor1);
 }             
 
 /* PALETA DE CORES */
@@ -18,7 +19,6 @@
 /* CORPO */
 body {
     font-family: 'Sen', Arial, sans-serif;
-    color: var(--cor1);
 }
 
 .container {}
@@ -42,6 +42,7 @@ body {
     max-width: 5rem;
 }
 
+
 /* ÁREA DE NAVEGAÇÃO */
 .cabecalho__navegacao {
     display: flex;
@@ -54,14 +55,15 @@ body {
     background-color: transparent;
     border: none;
     order: 1;
-    color: var(--cor2);
     font-size: 1.12em;
     padding: 1rem 1.2rem;
     border-radius: 5px;
     margin-left: 0.7rem;
 }
 
-#botaoMenu i {}
+#botaoMenu i {
+    color: var(--cor2);
+}
 
 /* LISTA DE LINKS */
 .navecacao__listaLinks {
@@ -205,7 +207,6 @@ body {
 
 .item__blocoSuporte {
     background-color: var(--cor1);
-    color: white;
     border-radius: 5px;
     margin-bottom: 3rem;
     position: relative;
@@ -217,6 +218,7 @@ body {
 .item__blocoSuporte span {
     font-size: 2.5em;
     font-weight: bold;
+    color: var(--cor2);
 }
 
 .listaComprarDoar__item:nth-child(2) > .item__blocoSuporte span  {
@@ -231,6 +233,7 @@ body {
     font-size: 2.5em;
     margin: 1rem auto 1rem auto;
     max-width: 14rem;
+    color: var(--cor2);
 }
 
 .item__blocoSuporte svg {
@@ -315,7 +318,7 @@ body {
     list-style: none;
     display: flex;
     text-align: center;
-    gap: 4rem;
+    gap: 2.5rem;
     flex-wrap: wrap;
 }
 
@@ -332,7 +335,6 @@ body {
     width: 100%;
     border-radius: 5px;
     margin-bottom: 1rem;
-    height: 68%;
 }
 
 .produto__descricao {}
@@ -385,7 +387,6 @@ body {
 
 .secaoLoja__descricaoLojaLocal {
     background-color: var(--cor1);
-    color: var(--cor2);
     padding: 2rem;
     padding-bottom: 4rem;
 }
@@ -393,18 +394,23 @@ body {
 .secaoLoja__descricaoLojaLocal h2 {
     margin-bottom: 1rem;
     font-size: 2.8em;
+    color: var(--cor2);
 }
 
 .secaoLoja__descricaoLojaLocal p {
     line-height: 1.5;
     margin-bottom: 1rem;
+    color: var(--cor2);
 }
 
 .secaoLoja__descricaoLojaLocal span {
     line-height: 1.5;
+    color: var(--cor2);
 }
 
-.secaoLoja__descricaoLojaLocal span strong {}
+.secaoLoja__descricaoLojaLocal span strong {
+    color: var(--cor2);
+}
 
 /* RODAPÉ */
 .rodape {

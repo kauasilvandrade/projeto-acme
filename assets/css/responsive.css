@@ -8,20 +8,63 @@
     }
 
     /* SEÇÃO DE SERVIÇO */
-    .conteudo__secaoServico {
+    .conteudo__secaoServico, .conteudo__secaoSegurancaCovid {
         padding: 7rem 1rem 3rem 1rem;
     }
 
     .conteudo__secaoServico > .container {
-        /* max-width: 36%; */
+        max-width: none;
     }
 
     .conteudo__secaoServico h1 {
         font-size: 3.9em;
+        max-width: 51%;
+    }
+
+    .conteudo__secaoServico p, .conteudo__secaoSegurancaCovid p {
+        font-size: 1.2em;
     }
 
     .conteudo__secaoServico p {
-        font-size: 1.2em;
+        max-width: 25rem;
+    }
+
+    /* SEÇÃO SEGURANÇA DO COVID */
+    .conteudo__secaoSegurancaCovid h1 {
+        font-size: 3em;
+        max-width: 20rem;
+    }
+
+    .conteudo__secaoSegurancaCovid p {
+        max-width: 16rem;
+    }
+
+    /* SEÇÃO LOJA LOCAL */
+    .secaoLoja__descricaoLojaLocal {
+        padding: 5.1rem;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    
+    .container {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+    
+    /* SEÇÃO SERVIÇO */
+    .conteudo__secaoServico > .container {
+        max-width: 1170px;
+    }
+
+    /* SEÇÃO SEGURANÇA DO COVID */
+    .conteudo__secaoSegurancaCovid h1 {
+        max-width: 35rem;
+    }
+
+    .conteudo__secaoSegurancaCovid p {
+        max-width: 27rem;
     }
 
 }
