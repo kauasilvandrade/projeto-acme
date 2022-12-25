@@ -67,4 +67,47 @@
         max-width: 27rem;
     }
 
+    /* SEÇÃO LOJA LOCAL */
+    .conteudo__secaoLojaLocal {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        margin-bottom: 4rem;
+    }
+
+    .secaoLoja__imgBox {
+        width: 15rem;
+        height: 26rem;
+        min-height: auto;
+        position: absolute;
+        left: 1rem;
+        top: 4rem;
+    }
+
+    .secaoLoja__descricaoLojaLocal {
+        max-width: 80%;
+        border-radius: 5px;
+        padding: 3.1rem 2.5rem 3.5rem 10rem;
+    }
+
+    /* RODAPÉ */
+    .rodape > .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}
+
+@media screen and (min-width: 990px) {
+    
+    /* SEÇÃO LOJA LOCAL */
+    .secaoLoja__imgBox {
+        width: 23rem;
+        top: 3rem;
+    }
+
+    .secaoLoja__descricaoLojaLocal {
+        padding: 3.1rem 2.5rem 3.5rem 23rem;
+    }
+
 }
