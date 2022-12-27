@@ -58,17 +58,24 @@ function abrirCarrinho(event) {
     const carrinhoCompras = document.querySelector(".navegacao__carrinhoCompras");
     carrinhoCompras.classList.toggle("ativado");
 
-    // ACESSIBILIDADE
+    if (carrinhoCompras.classList.contains("ativado")) {
+
+        event.currentTarget.setAttribute("aria-expanded", "true");
+
+    } else {
+
+        event.currentTarget.setAttribute("aria-expanded", "false");
+
+    }
 
     // FECHAR CARRINHO DE COMPRAS
     const btnFecharCarrinho = document.querySelector(".botaoFecharCarrinho");
 
-    btnFecharCarrinho.addEventListener('click', (event) => {
+    btnFecharCarrinho.addEventListener('click', () => {
         
         carrinhoCompras.classList.remove("ativado");
 
     })
-
 } 
 
 const btnAbrirCarrinho = document.querySelector(".navegacao__botaoAbrirCarrinho");
