@@ -52,7 +52,7 @@
         max-width: 1170px;
         margin: 0 auto;
     }
-    
+
     /* SEÇÃO SERVIÇO */
     .conteudo__secaoServico > .container {
         max-width: 1170px;
@@ -100,6 +100,34 @@
 
 @media screen and (min-width: 990px) {
     
+    .cabecalho {
+        padding: 1.1em;
+    }
+
+    /* BOTÃO MENU MOBILE */
+    #botaoMenu {
+        display: none;
+    }
+
+    /* ÁREA DE NAVEGAÇÃO */
+    .navecacao__listaLinks {
+        position: unset;
+        flex-direction: row;
+        height: auto;
+        gap: 2.5rem;
+        padding: 0;
+        transition: none;
+    }
+
+    .listaLinks__item a {
+        font-size: 1em;
+    }
+
+    /* CARRINHO DE COMPRAS */
+    .navegacao__botaoAbrirCarrinho {
+        margin-left: 3rem;
+    }
+
     /* SEÇÃO LOJA LOCAL */
     .secaoLoja__imgBox {
         width: 23rem;
