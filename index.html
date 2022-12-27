@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
 
 </head>
-<body>
+<body onresize="mudouTamanho()">
     
     <!-- CABEÇALHO -->
     <header class="cabecalho">
@@ -38,12 +38,16 @@
             <nav class="cabecalho__navegacao">
 
                 <!-- BOTÃO MENU MOBILE -->
-                <button id="botaoMenu">
+                <button id="botaoMenu"
+                aria-controls="menu"
+                aria-expanded="true"
+                aria-label="Botão abrir menu"
+                aria-haspopup="true">
                     <i class="fa-solid fa-bars"></i>
                 </button>
 
                 <!-- LISTA DE LINKS -->
-                <ul class="navecacao__listaLinks">
+                <ul class="navecacao__listaLinks" id="menu" role="menu">
 
                     <li class="listaLinks__item">
                         <a href="#">Home</a>
@@ -68,11 +72,11 @@
                 </ul>
 
                 <!-- CARRINHO DE COMPRAS -->
-                <div class="navegacao__botaoAbrirCarrinho">
+                <button class="navegacao__botaoAbrirCarrinho">
 
                     <svg xmlns="http://www.w3.org/2000/svg" role="img" width="48px" height="48px" viewBox="0 0 24 24" aria-labelledby="cartIconTitle" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" color="#ffffff"> <title id="cartIconTitle">Cart</title> <path d="M6 6h15l-1.5 9h-12z"/> <circle cx="9" cy="19" r="1"/> <circle cx="18" cy="19" r="1"/> <path d="M6 6H3"/> </svg>
 
-                </div>
+                </button>
 
                 <div class="navegacao__carrinhoCompras">
 
@@ -357,6 +361,8 @@
         </div>
 
     </footer>
+
+    <script src="assets/js/script.js"></script>
 
 </body>
 </html>

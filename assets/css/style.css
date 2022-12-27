@@ -27,6 +27,9 @@ body {
 .cabecalho {
     background-color: var(--cor3);
     padding: 1.5rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 .cabecalho > .container {
@@ -58,6 +61,7 @@ body {
     padding: 1rem 1.2rem;
     border-radius: 5px;
     margin-left: 0.7rem;
+    z-index: 2;
 }
 
 #botaoMenu.ativado { /*CLASSE ATIVADA COM JAVASCRIPT*/
@@ -83,6 +87,7 @@ body {
     list-style: none;
     padding: 1rem;
     transition: all .3s;
+    z-index: 1;
 }
 
 .navecacao__listaLinks.ativado { /*CLASSE ATIVADA COM JAVASCRIPT*/
@@ -119,6 +124,8 @@ body {
     position: relative;
     justify-content: center;
     cursor: pointer;
+    transition: .3s;
+    border: none;
 }
 
 .navegacao__botaoAbrirCarrinho::before {
@@ -137,6 +144,10 @@ body {
     font-size: 0.75em;
 }
 
+.navegacao__botaoAbrirCarrinho:hover {
+    opacity: 0.8;
+}
+
 .navegacao__botaoAbrirCarrinho svg {
     width: 1.25rem;
 }
@@ -146,7 +157,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    max-width: 450px;
+    max-width: 28.1rem;
     height: 100vh;
     right: 0;
     opacity: 0;
@@ -164,7 +175,7 @@ body {
     display: block;
     left: 0;
     height: 100vh;
-    width: calc(100vw - 467px);
+    width: calc(100vw - 29.1rem);
     z-index: -1;
 }
 
@@ -212,7 +223,7 @@ body {
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
     padding: 17rem 1rem 3rem 1rem;
-    min-height: 530px;
+    min-height: 33.1rem;
 }
 
 .conteudo__secaoServico {
@@ -310,6 +321,7 @@ body {
     padding: 2rem 2rem 5.5rem 2rem;
     overflow: hidden;
     height: 20rem;
+    z-index: -1;
 }
 
 .item__blocoSuporte span {

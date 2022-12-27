@@ -73,6 +73,7 @@
         justify-content: flex-end;
         position: relative;
         margin-bottom: 4rem;
+        z-index: -1;
     }
 
     .secaoLoja__imgBox {
