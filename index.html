@@ -40,7 +40,7 @@
                 <!-- BOTÃO MENU MOBILE -->
                 <button id="botaoMenu"
                 aria-controls="menu"
-                aria-expanded="true"
+                aria-expanded="false"
                 aria-label="Botão abrir menu"
                 aria-haspopup="true">
                     <i class="fa-solid fa-bars"></i>
@@ -72,7 +72,11 @@
                 </ul>
 
                 <!-- CARRINHO DE COMPRAS -->
-                <button class="navegacao__botaoAbrirCarrinho">
+                <button class="navegacao__botaoAbrirCarrinho"
+                aria-controls="navegacao__carrinhoCompras"
+                aria-expanded="false"
+                aria-label="Botão abrir carrinho de compras"
+                aria-haspopup="true">
 
                     <svg xmlns="http://www.w3.org/2000/svg" role="img" width="48px" height="48px" viewBox="0 0 24 24" aria-labelledby="cartIconTitle" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" color="#ffffff"> <title id="cartIconTitle">Cart</title> <path d="M6 6h15l-1.5 9h-12z"/> <circle cx="9" cy="19" r="1"/> <circle cx="18" cy="19" r="1"/> <path d="M6 6H3"/> </svg>
 
@@ -84,7 +88,9 @@
 
                         <h2>Your Cart</h2>
 
-                        <button class="botaoFecharCarrinho">
+                        <button class="botaoFecharCarrinho"
+                        aria-controls="navegacao__carrinhoCompras"
+                        aria-label="Botão fechar carrinho de compras">
                             <svg width="16px" height="16px" viewBox="0 0 16 16"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g fill-rule="nonzero" fill="#333333"><polygon points="6.23223305 8 0.616116524 13.6161165 2.38388348 15.3838835 8 9.76776695 13.6161165 15.3838835 15.3838835 13.6161165 9.76776695 8 15.3838835 2.38388348 13.6161165 0.616116524 8 6.23223305 2.38388348 0.616116524 0.616116524 2.38388348 6.23223305 8"></polygon></g></g></svg>
                         </button>
 

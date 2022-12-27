@@ -21,7 +21,6 @@ function mudouTamanho() {
 // ACESSIBILIDADE
 function acessibilidade(event) {
     
-    // ACESSIBILIDADE MENU
     if (event.type == 'touchstart') event.preventDefault();
 
     const ativado = listaMenu.classList.contains("ativado");
@@ -33,8 +32,6 @@ function acessibilidade(event) {
     } else {
         event.currentTarget.setAttribute("aria-label", "Botão abrir menu");
     }
-
-    // ACESSIBILIDADE CARRINHO DE COMPRAS
 
 }
 
@@ -55,23 +52,24 @@ btnMenu.addEventListener("click", menuShow);
 btnMenu.addEventListener("touchstart", menuShow);
 
 // FUNÇÃO PARA ABRIR O CARRINHO DE COMPRAS
-function abrirCarrinho() {
+function abrirCarrinho(event) {
 
     // CARRINHO DE COMPRAS
     const carrinhoCompras = document.querySelector(".navegacao__carrinhoCompras");
     carrinhoCompras.classList.toggle("ativado");
 
+    // ACESSIBILIDADE
+
     // FECHAR CARRINHO DE COMPRAS
     const btnFecharCarrinho = document.querySelector(".botaoFecharCarrinho");
 
-    btnFecharCarrinho.addEventListener('click', () => {
+    btnFecharCarrinho.addEventListener('click', (event) => {
+        
         carrinhoCompras.classList.remove("ativado");
-    })
 
-    acessibilidade(event);
+    })
 
 } 
 
 const btnAbrirCarrinho = document.querySelector(".navegacao__botaoAbrirCarrinho");
 btnAbrirCarrinho.addEventListener("click", abrirCarrinho);
-btnAbrirCarrinho.addEventListener("touchstart", abrirCarrinho);
